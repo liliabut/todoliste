@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Seitenbreite aufs Gerät anpassen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- Name der Seite -->
+    <title>Todo Liste</title>
+
+    <!-- Bootstrap Mobil-Bibliothek -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+		  <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">TODO Liste</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Suche nach Aufgaben...">
+					</div>
+					<button type="submit" class="btn btn-default">Suche</button>
+				  </form>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Impressum</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
+					  <ul class="dropdown-menu" role="menu">
+						<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
+						<li><a href="#">GitHub</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+		</nav>
+
+      <div class="row">
+        <div class="col-md-7">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>TODO</th>
+                <th>Prio</th>
+                <th>Datum</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark Otto</td>
+                <td>Vortrag vorbereiten</td>
+                <td><span class="label label-danger">Kritisch</span></td>
+                <td>24.01.2015, 23:59</td>
+                <td><span class="label label-default">Offen</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mark Otto</td>
+                <td>Vortrag ausdrucken</td>
+                <td><span class="label label-warning">Hoch</span></td>
+                <td>04.02.2015, 22:00</td>
+                <td><span class="label label-success">Erledigt</span></td>
+              </tr>
+			  <tr>
+                <td>3</td>
+                <td>Lilia Butenkova</td>
+                <td>Vortrag vorbereiten</td>
+                <td><span class="label label-primary">Normal</span></td>
+                <td>24.03.2015, 23:59</td>
+                <td><span class="label label-default">Offen</span></td>
+              </tr>
+			  <tr>
+                <td>4</td>
+                <td>Max Mustermann</td>
+                <td>Vortrag vorbereiten</td>
+                <td><span class="label label-info">Niedrig</span></td>
+                <td>14.04.2015, 23:59</td>
+                <td><span class="label label-default">Offen</span></td>
+              </tr>
+            </tbody>
+          </table>
+		  
+		  <div class="btn-group btn-group-justified" role="group" aria-label="">
+			<a href="neuestodo.html" class="btn btn-lg btn-success" role="button"><span class="glyphicon glyphicon-plus"></span> Neues</a>
+			<a href="#" class="btn btn-lg btn-warning" role="button"><span class="glyphicon glyphicon-pencil"></span> Editieren</a>
+			<a href="#" class="btn btn-lg btn-danger" role="button"><span class="glyphicon glyphicon-remove"></span> Loschen</a>
+		  </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

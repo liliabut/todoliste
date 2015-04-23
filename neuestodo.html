@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Seitenbreite aufs Gerät anpassen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- Name der Seite -->
+    <title>Todo Liste</title>
+
+    <!-- Bootstrap Mobil-Bibliothek -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+		  <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Neues TODO</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	  
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Impressum</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
+					  <ul class="dropdown-menu" role="menu">
+						<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
+						<li><a href="#">GitHub</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+		</nav>
+
+      <div class="row">
+        <div class="col-md-7">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>TODO</th>
+                <th>Prio</th>
+                <th>Datum</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					</div>
+				</td>
+                <td>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+					</div>
+				</td>
+                <td>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+						<span class="label label-danger">Kritisch</span>
+						<span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-warning">Hoch</span></a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-primary">Normal</span></a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-info">Niedrig</span></a></li>
+					  </ul>
+					</div>
+				</td>
+                <td>24.01.2015, 23:59</td>
+                <td><span class="label label-default">Offen</span></td>
+              </tr>
+            </tbody>
+          </table>
+	
+		  <div class="btn-group btn-group-justified" role="group" aria-label="">
+			<a href="index.html" class="btn btn-lg btn-success" role="button"><span class="glyphicon glyphicon-plus"></span> OK</a>
+			<a href="index.html" class="btn btn-lg btn-danger" role="button"><span class="glyphicon glyphicon-remove"></span> Abrechen</a>
+		  </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
