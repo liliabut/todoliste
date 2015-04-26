@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Seitenbreite aufs Gerät anpassen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- Name der Seite -->
+    <title>Todo Liste</title>
+
+    <!-- Bootstrap Mobil-Bibliothek -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  </head>
+  <body>
+		  <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="index.html">TODO Liste</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Suche nach Aufgaben...">
+					</div>
+					<button type="submit" class="btn btn-default">Suche</button>
+				  </form>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Aufgaben</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
+					  <ul class="dropdown-menu" role="menu">
+						<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
+						<li><a href="#">GitHub</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			 </div><!-- /.container-fluid -->
+		</nav>
+
+	<div class="container">
+    <div class="row text-center">
+		<div class="col-md-8 col-md-offset-2">
+		<div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+				<th><input type="checkbox"></th>
+                <th class="text-center">Name</th>
+                <th class="text-center">TODO</th>
+                <th class="text-center">Prio</th>
+                <th class="text-center">Datum</th>
+				<th class="text-center">Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+			
+              <tr>
+				<th><input type="checkbox"></th>
+                <td class="text-center">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Mark Otto" aria-describedby="basic-addon1">
+					</div>
+				</td>
+                <td>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Vortrag vorbereiten" aria-describedby="basic-addon1">
+					</div>
+				</td>
+                <td>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+						<span class="label label-danger">Kritisch</span>
+						<span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-warning">Hoch</span></a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-primary">Normal</span></a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-info">Niedrig</span></a></li>
+					  </ul>
+					</div>
+				</td>
+                <td>24.01.15</td>
+				<td>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="30%" aria-describedby="basic-addon1">
+					</div>
+				</td>
+              </tr>
+              <tr>
+				<th><input type="checkbox"></th>
+                <td>Mark Otto</td>
+                <td>Vortrag ausdrucken</td>
+                <td><span class="label label-warning">Hoch</span></td>
+                <td>04.02.15</td>
+				<td>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+						100%
+					  </div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+				<th><input type="checkbox"></th>
+                <td>Lilia Butenkova</td>
+                <td>Vortrag vorbereiten</td>
+                <td><span class="label label-primary">Normal</span></td>
+                <td>24.03.15</td>
+				<td>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+						90%
+					  </div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+				<th><input type="checkbox"></th>
+                <td>Max Mustermann</td>
+                <td>Vortrag vorbereiten</td>
+                <td><span class="label label-info">Niedrig</span></td>
+                <td>14.04.15</td>
+				<td>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+						50%
+					  </div>
+					</div>
+				</td>
+              </tr>
+            </tbody>
+          </table>	
+		  </div>
+        </div>
+	</div>		
+		<div class="row text-center">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="btn-group btn-group-justified" role="group" aria-label="">
+				<a href="index.html" class="btn btn-lg btn-success" role="button"><span class="glyphicon glyphicon-plus"></span> OK</a>
+				<a href="index.html" class="btn btn-lg btn-danger" role="button"><span class="glyphicon glyphicon-remove"></span> Abrechen</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+		  <footer class="row text-center">
+			<nav>
+			  <ul class="pagination">
+				<li><a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+				<li><a href="#" class="btn btn-default active" role="button">1</a>
+				<li><a href="#" class="btn btn-default" role="button">2</a>
+				<li><a href="#" class="btn btn-default" role="button">3</a>
+				<li><a href="#" class="btn btn-default" role="button">4</a>
+				<li><a href="#" class="btn btn-default" role="button">5</a>
+				<li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+			  </ul>
+			</nav>
+		  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
