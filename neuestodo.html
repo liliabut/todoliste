@@ -14,42 +14,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
   <body>
-		  <nav class="navbar navbar-default">
-			  <div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				  <a class="navbar-brand" href="index.html">TODO Liste</a>
+	<nav class="navbar navbar-default">
+		 <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.html">TODO Liste</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="Suche nach Aufgaben...">
 				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				  <form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-					  <input type="text" class="form-control" placeholder="Suche nach Aufgaben...">
-					</div>
-					<button type="submit" class="btn btn-default">Suche</button>
-				  </form>
-				  <ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Aufgaben</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
-					  <ul class="dropdown-menu" role="menu">
-						<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
-						<li><a href="#">GitHub</a></li>
-					  </ul>
-					</li>
+				<button type="submit" class="btn btn-default">Suche</button>
+			  </form>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Aufgaben</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
+					<li><a href="#">GitHub</a></li>
 				  </ul>
-				</div><!-- /.navbar-collapse -->
-			 </div><!-- /.container-fluid -->
-		</nav>
-		
+				</li>
+			  </ul>
+			</div>
+		 </div>
+	</nav>
 	<div class="container">
     <div class="row text-center">
 		<div class="col-md-8 col-md-offset-2">
@@ -119,11 +115,13 @@
               </tr>
 			  <tr>
                 <td>
+					<!-- Nameeingabe -->
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="Name eintragen" aria-describedby="basic-addon1">
 					</div>
 				</td>
                 <td>
+					<!-- TODOeingabe -->
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="TODO eintragen" aria-describedby="basic-addon1">
 					</div>
@@ -134,6 +132,7 @@
 						<span class="label label-danger">Kritisch</span>
 						<span class="caret"></span>
 					  </button>
+					  <!-- Prio auswählen -->
 					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-warning">Hoch</span></a></li>
 						<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="label label-primary">Normal</span></a></li>
@@ -143,6 +142,7 @@
 				</td>
                 <td>NOW</td>
 				<td>
+					<!-- Progresseingabe -->
 					<div class="progress">
 					  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 					  </div>
